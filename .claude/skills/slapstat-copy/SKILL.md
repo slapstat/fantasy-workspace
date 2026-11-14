@@ -76,6 +76,15 @@ next has to work with:
 2. Replace vague wording with concrete product behaviour.
 3. Read for natural rhythm and remove mechanical repetition.
 
+## Filling placeholders
+
+A build leaves `[[copy: what this text has to do]]` wherever a user will read text. Fill every
+placeholder in the change in the same sitting, not one at a time: read them side by side first,
+so a page's heading, buttons and empty state are written as one voice and never repeat each
+other. The brief says what the text must do, not what it must say; a placeholder whose job a
+label or the layout already does becomes no text at all. Then list each string, location first,
+under `## Copy` in the PR body.
+
 ## Reviewing existing copy
 
 Do not assume every sentence needs rewriting. Some of it is already good, and rewriting good
