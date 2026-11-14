@@ -37,6 +37,10 @@ Ignore code that users never see, such as CSS classes, routes and test IDs.
 
 If the change contains no new or changed user-facing copy, say so and stop.
 
+A `[[copy: …]]` left in the diff is not a string to review but one still to write (root
+`CLAUDE.md`, *Copy is written in its own pass*): write it with `slapstat-copy` first, then
+review it with the rest.
+
 ## 2. Run the mechanical check
 
 ```bash

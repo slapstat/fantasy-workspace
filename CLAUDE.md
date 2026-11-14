@@ -110,6 +110,23 @@ complete answer):
 
 A path that differs from what the issue proposed is a line for `DECISIONS.md`.
 
+## Copy is written in its own pass
+
+**A build writes no copy.** Copy written as a side effect of a component got no thought, and
+Alexander found and fixed it by hand afterwards. So, in any repo, any change — a page, a
+section, a button, an error a user reads:
+
+1. **Build with placeholders.** Every string a user will read is `[[copy: what this text has to
+   do]]` — the job, never draft wording (`[[copy: error when the Yahoo league can't be read]]`).
+2. **Then write it all at once**, once the feature works: a copy pass of its own over every
+   placeholder in the change, held to the `slapstat-copy` skill (read its `SKILL.md`; the skill
+   does not load by itself).
+3. **List it in the PR body** under `## Copy` — each string's location, then its text — so the
+   change's copy reads in one place.
+
+fantasy-web's `npm run check:copy` fails while any placeholder is left, so none merges there;
+elsewhere it is on the author to grep for `[[copy:` before opening the PR.
+
 ## Definition of done
 
 Done when **all** of these hold — iterate until they do, don't report finished with a list
